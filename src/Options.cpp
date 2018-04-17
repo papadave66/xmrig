@@ -223,7 +223,7 @@ Options::Options(int argc, char **argv) :
     m_algo(0),
     m_algoVariant(0),
     m_apiPort(0),
-    m_donateLevel(kDonateLevel),
+    m_donateLevel(kDefaultDonateLevel),
     m_maxCpuUsage(75),
     m_printTime(60),
     m_priority(-1),
