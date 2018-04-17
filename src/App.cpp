@@ -57,7 +57,6 @@ App *App::m_self = nullptr;
 
 
 App::App(int argc, char **argv) :
-    m_console(nullptr),
     m_httpd(nullptr),
     m_network(nullptr),
     m_options(nullptr)
@@ -71,11 +70,6 @@ App::App(int argc, char **argv) :
     }
 
     Log::init();
-
-    if (!m_options->background()) {
-        Log::add(new ConsoleLog(m_options->colors()));
-        m_console = new Console(this);
-    }
 
     if (m_options->logFile()) {
         Log::add(new FileLog(m_options->logFile()));
@@ -105,8 +99,6 @@ App::~App()
 #   ifndef XMRIG_NO_HTTPD
     delete m_httpd;
 #   endif
-
-    delete m_console;
 }
 
 

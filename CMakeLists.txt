@@ -15,7 +15,6 @@ set(HEADERS
     src/api/ApiState.h
     src/api/NetworkState.h
     src/App.h
-    src/Console.h
     src/Cpu.h
     src/interfaces/IClientListener.h
     src/interfaces/IConsoleListener.h
@@ -77,7 +76,6 @@ set(SOURCES
     src/api/ApiState.cpp
     src/api/NetworkState.cpp
     src/App.cpp
-    src/Console.cpp
     src/log/ConsoleLog.cpp
     src/log/FileLog.cpp
     src/log/Log.cpp
