@@ -28,7 +28,6 @@
 
 #include "api/Api.h"
 #include "App.h"
-#include "Console.h"
 #include "Cpu.h"
 #include "crypto/CryptoNight.h"
 #include "log/ConsoleLog.h"
